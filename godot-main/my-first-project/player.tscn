@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bcm1xkoi7snqc"]
+
+[ext_resource type="Texture2D" uid="uid://cmgn33tuqbs8k" path="res://pixil-frame-0.png" id="1_4flbx"]
+
+[node name="Player" type="CharacterBody2D" unique_id=951944742]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2061092433]
+position = Vector2(21.249998, 24.499996)
+scale = Vector2(1.7, 1.7571428)
+texture = ExtResource("1_4flbx")
