@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://duq1fvct7i01s"]
+
+[ext_resource type="Script" uid="uid://5bpbs02074h1" path="res://win_screen.gd" id="1_l2arl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_731nq"]
+bg_color = Color(0.5566046, 0.62885, 0.49336827, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 13
+corner_radius_top_right = 13
+corner_radius_bottom_right = 13
+corner_radius_bottom_left = 13
+
+[node name="WinScreen" type="Control" unique_id=467649598]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_l2arl")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=515254695]
+layout_mode = 0
+offset_left = -1.0
+offset_right = 1156.0
+offset_bottom = 644.0
+color = Color(0.24231634, 0.37149614, 0.3447543, 1)
+
+[node name="Label" type="Label" parent="." unique_id=398309280]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 0.57500005
+offset_left = 199.0
+offset_top = 64.0
+offset_right = 930.0
+offset_bottom = 273.0
+theme_override_font_sizes/font_size = 170
+text = "YOU WIN"
+
+[node name="Button" type="Button" parent="." unique_id=430837928]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 389.0
+offset_right = 723.0
+offset_bottom = 466.0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_731nq")
+text = "PLAY AGAIN"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
