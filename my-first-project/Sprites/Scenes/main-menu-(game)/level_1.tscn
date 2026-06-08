@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://5u5uneedmwdw"]
+
+[ext_resource type="Script" uid="uid://bakpwvjgyp566" path="res://level_1.gd" id="1_3hls8"]
+
+[node name="Level 1" type="Node2D" unique_id=1661297932]
+script = ExtResource("1_3hls8")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1644105590]
+offset_left = -3.0
+offset_top = 7.0
+offset_right = 1151.0
+offset_bottom = 653.0
+color = Color(1, 1, 1, 0.5058824)
+
+[node name="Button" type="Button" parent="." unique_id=1072384019]
+offset_left = 607.0
+offset_top = 432.0
+offset_right = 685.0
+offset_bottom = 463.0
+text = "GO BACK"
+
+[node name="Label" type="Label" parent="." unique_id=2126488591]
+offset_left = 579.0
+offset_top = 275.0
+offset_right = 768.0
+offset_bottom = 298.0
+text = "CLICK HERE TO GO BACK"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

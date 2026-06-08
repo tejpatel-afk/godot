@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://dompnj0y31crm"]
+
+[ext_resource type="Script" uid="uid://6pcjw23riav1" path="res://level_2.gd" id="1_cggpd"]
+[ext_resource type="Texture2D" uid="uid://dyx54jirsn06i" path="res://Sprites/Sky.png" id="2_055b2"]
+[ext_resource type="PackedScene" uid="uid://bcm1xkoi7snqc" path="res://Scenes/player.tscn" id="3_2mgoq"]
+[ext_resource type="PackedScene" uid="uid://x72d7wcjnknj" path="res://Scenes/platform.tscn" id="4_uhnj4"]
+[ext_resource type="PackedScene" uid="uid://x1e3sa582w54" path="res://Scenes/enemy.tscn" id="6_cggpd"]
+[ext_resource type="PackedScene" uid="uid://csafavvrbju7p" path="res://Scenes/goal_2.tscn" id="6_t7v2y"]
+
+[node name="Level2" type="Node2D" unique_id=673532690]
+script = ExtResource("1_cggpd")
+
+[node name="Sky" type="Sprite2D" parent="." unique_id=645144652]
+position = Vector2(575.5, 324.5)
+scale = Vector2(11.49, 6.5099998)
+texture = ExtResource("2_055b2")
+
+[node name="Player" parent="." unique_id=951944742 instance=ExtResource("3_2mgoq")]
+position = Vector2(-14, 399)
+
+[node name="Platform" parent="." unique_id=1295150633 instance=ExtResource("4_uhnj4")]
+position = Vector2(-1, 507)
+
+[node name="Platform2" parent="." unique_id=1751039166 instance=ExtResource("4_uhnj4")]
+position = Vector2(-1, 389)
+
+[node name="Platform3" parent="." unique_id=1550611690 instance=ExtResource("4_uhnj4")]
+position = Vector2(0, 624)
+
+[node name="Platform4" parent="." unique_id=2121280999 instance=ExtResource("4_uhnj4")]
+position = Vector2(281, 340)
+
+[node name="Platform5" parent="." unique_id=728100743 instance=ExtResource("4_uhnj4")]
+position = Vector2(869, 519)
+
+[node name="Platform6" parent="." unique_id=1289693055 instance=ExtResource("4_uhnj4")]
+position = Vector2(765, 346)
+
+[node name="Platform7" parent="." unique_id=2065467334 instance=ExtResource("4_uhnj4")]
+position = Vector2(524, 260)
+
+[node name="goal2" parent="." unique_id=1887735430 instance=ExtResource("6_t7v2y")]
+position = Vector2(1013, 415)
+
+[node name="Enemy" parent="." unique_id=544016294 instance=ExtResource("6_cggpd")]
+position = Vector2(123, 371)
+
+[node name="Enemy2" parent="." unique_id=339734254 instance=ExtResource("6_cggpd")]
+position = Vector2(884, 330)
