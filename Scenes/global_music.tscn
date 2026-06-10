@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://7qdmx4d3nbrk"]
+
+[ext_resource type="AudioStream" uid="uid://be8ynyf4emfsg" path="res://nastelbom-intense-453507.mp3" id="1_j0w4y"]
+
+[node name="global_music" type="AudioStreamPlayer2D" unique_id=395337501]
+stream = ExtResource("1_j0w4y")
+autoplay = true

@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://cwoksqx4ik54s"]
+
+[ext_resource type="Texture2D" uid="uid://dyx54jirsn06i" path="res://Sprites/Sky.png" id="1_f6i20"]
+[ext_resource type="PackedScene" uid="uid://x72d7wcjnknj" path="res://Scenes/platform.tscn" id="2_dvrgg"]
+[ext_resource type="PackedScene" uid="uid://bcm1xkoi7snqc" path="res://Scenes/player.tscn" id="3_wk15n"]
+[ext_resource type="PackedScene" uid="uid://cu4sy5ukutdob" path="res://Scenes/goal_4.tscn" id="5_3ntyy"]
+[ext_resource type="PackedScene" uid="uid://x1e3sa582w54" path="res://Scenes/enemy.tscn" id="5_f6i20"]
+
+[node name="level_4" type="Node2D" unique_id=863327998]
+
+[node name="Sky" type="Sprite2D" parent="." unique_id=1127634612]
+position = Vector2(570.5, 325.00003)
+scale = Vector2(11.69, 6.68)
+texture = ExtResource("1_f6i20")
+
+[node name="Platforms" type="Node2D" parent="." unique_id=1951710849]
+
+[node name="Platform" parent="Platforms" unique_id=1295150633 instance=ExtResource("2_dvrgg")]
+position = Vector2(22, 482)
+
+[node name="Platform2" parent="Platforms" unique_id=433811441 instance=ExtResource("2_dvrgg")]
+position = Vector2(19, 218)
+
+[node name="Platform3" parent="Platforms" unique_id=1002395857 instance=ExtResource("2_dvrgg")]
+position = Vector2(315, 298)
+
+[node name="Platform4" parent="Platforms" unique_id=1220226848 instance=ExtResource("2_dvrgg")]
+position = Vector2(20, 358)
+
+[node name="Platform5" parent="Platforms" unique_id=262114153 instance=ExtResource("2_dvrgg")]
+position = Vector2(22, 591)
+
+[node name="Platform6" parent="Platforms" unique_id=757448326 instance=ExtResource("2_dvrgg")]
+position = Vector2(330, 149)
+
+[node name="Platform7" parent="Platforms" unique_id=742113933 instance=ExtResource("2_dvrgg")]
+position = Vector2(650, 247)
+
+[node name="Platform8" parent="Platforms" unique_id=1702897787 instance=ExtResource("2_dvrgg")]
+position = Vector2(904, 330)
+
+[node name="Player_Enemies_Goal" type="Node2D" parent="." unique_id=42820760]
+
+[node name="Enemy" parent="Player_Enemies_Goal" unique_id=1217966574 instance=ExtResource("5_f6i20")]
+position = Vector2(438, 128)
+
+[node name="Enemy2" parent="Player_Enemies_Goal" unique_id=504075414 instance=ExtResource("5_f6i20")]
+position = Vector2(427, 277)
+
+[node name="Enemy3" parent="Player_Enemies_Goal" unique_id=544016294 instance=ExtResource("5_f6i20")]
+position = Vector2(133, 338)
+
+[node name="Player" parent="Player_Enemies_Goal" unique_id=951944742 instance=ExtResource("3_wk15n")]
+position = Vector2(-29, 369)
+
+[node name="goal_4" parent="Player_Enemies_Goal" unique_id=1054766561 instance=ExtResource("5_3ntyy")]
+position = Vector2(803, 32)
