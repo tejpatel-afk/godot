@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://csafavvrbju7p"]
 
-[ext_resource type="Script" uid="uid://b22kath4rlnsm" path="res://goal_2.gd" id="1_35guh"]
+[ext_resource type="Script" uid="uid://b22kath4rlnsm" path="res://Code/goal_2.gd" id="1_35guh"]
 [ext_resource type="Texture2D" uid="uid://dt0h70w40iynm" path="res://Sprites/pixil-frame-0 (3).png" id="2_u5g2i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0k4q0"]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bcm1xkoi7snqc"]
 
-[ext_resource type="Script" uid="uid://iib1bn1ah8ep" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://iib1bn1ah8ep" path="res://Code/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://bhywjbtakmd1i" path="res://Sprites/pixil-frame-0 (1).png" id="2_onrkg"]
 [ext_resource type="Texture2D" uid="uid://emnlr0m67or2" path="res://Sprites/2nd char.png" id="3_i3pqv"]
 
@@ -30,6 +30,7 @@ position = Vector2(98.00001, 145)
 scale = Vector2(1.6409088, 1.6785715)
 sprite_frames = SubResource("SpriteFrames_hqtel")
 animation = &"walk"
+speed_scale = 1.5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=726992999]
 position = Vector2(112, 144)
